@@ -1,6 +1,6 @@
 
 def print_hi(name):
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    print(f'Hi, {name}')
 
 
 # To jest nowy komentarz
