@@ -15,7 +15,9 @@ class MyTestCase(unittest.TestCase):
     def test_unknown_gender_selector(self):
         self.assertEqual(gender_selector(""), "unknown")
         self.assertEqual(gender_selector("Zuzia"), "unknown")
-        self.assertEqual(gender_selector(111), "unknown")
+
+    def test_type_gender_selection(self):
+        self.assertRaises(ValueError, gender_selector, 111)
 
 
 if __name__ == '__main__':
