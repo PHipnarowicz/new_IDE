@@ -4,4 +4,4 @@ def gender_selector(name):
     elif name in ["Piotr", "Bartosz"]:
         return "M"
     else:
-        return "unknow"
+        return "unknown"

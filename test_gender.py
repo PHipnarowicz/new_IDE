@@ -13,9 +13,9 @@ class MyTestCase(unittest.TestCase):
         self.assertNotEqual(gender_selector("Cecylia"), "M")
 
     def test_unknow_gender_selector(self):
-        self.assertEqual(gender_selector(""), "unknow")
-        self.assertEqual(gender_selector("Zuzia"), "unknow")
-        self.assertEqual(gender_selector(111), "unknow")
+        self.assertEqual(gender_selector(""), "unknown")
+        self.assertEqual(gender_selector("Zuzia"), "unknown")
+        self.assertEqual(gender_selector(111), "unknown")
 
 
 if __name__ == '__main__':
