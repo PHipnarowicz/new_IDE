@@ -4,9 +4,18 @@ from gender import gender_selector
 
 
 class MyTestCase(unittest.TestCase):
-    def test_gender_selector(self):
+    def test_female_gender_selector(self):
         self.assertEqual(gender_selector("Anna"), "F")
+        self.assertEqual(gender_selector("Beata"), "F")
 
+    def test_male_gender_selector(self):
+        self.assertEqual(gender_selector("Piotr"), "M")
+        self.assertNotEqual(gender_selector("Cecylia"), "M")
+
+    def test_unknow_gender_selector(self):
+        self.assertEqual(gender_selector(""), "unknow")
+        self.assertEqual(gender_selector("Zuzia"), "unknow")
+        self.assertEqual(gender_selector(111), "unknow")
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,2 +1,7 @@
 def gender_selector(name):
-    pass
+    if name in ["Anna", "Beata", "Cecylia"]:
+        return "F"
+    elif name in ["Piotr", "Bartosz"]:
+        return "M"
+    else:
+        return "unknow"
