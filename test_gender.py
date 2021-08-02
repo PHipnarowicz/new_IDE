@@ -17,5 +17,6 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(gender_selector("Zuzia"), "unknow")
         self.assertEqual(gender_selector(111), "unknow")
 
+
 if __name__ == '__main__':
     unittest.main()
